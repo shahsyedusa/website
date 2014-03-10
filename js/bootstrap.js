@@ -1950,8 +1950,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
 }(jQuery);
 
-(function($) {
-
-  $(document).ready(function() {
+$(document).ready(function() {
     $('#fadeLoad').fadeIn();
-})(jQuery);
+});
