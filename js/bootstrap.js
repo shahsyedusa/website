@@ -18,6 +18,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 +function ($) {
   'use strict';
 
+
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
   // ============================================================
 
@@ -51,6 +52,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
   $(function () {
     $.support.transition = transitionEnd()
+  })
+
+  $(document).ready(function() {
+    $('#fadeLoad').fadeIn();
   })
 
 }(jQuery);
@@ -1949,7 +1954,3 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   })
 
 }(jQuery);
-
-$(document).ready(function() {
-    $('#fadeLoad').fadeIn();
-});
