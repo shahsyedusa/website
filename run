@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "success\n"
+git add index.html
+git commit -m "update index"
+git push
