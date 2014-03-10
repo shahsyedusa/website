@@ -53,11 +53,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   $(function () {
     $.support.transition = transitionEnd()
   })
-
-  $(document).ready(function() {
-    $('#fadeLoad').fadeIn();
-  })
-
 }(jQuery);
 
 /* ========================================================================
