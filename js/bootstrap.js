@@ -21,6 +21,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
   // ============================================================
 
+$(document).ready(function() {
+    $('#fadeLoad').fadeIn();
+});
+
   function transitionEnd() {
     var el = document.createElement('bootstrap')
 
