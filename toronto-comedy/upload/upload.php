@@ -95,7 +95,7 @@
 		file_put_contents($upload_desc, $current);
 		htmlHeader();
 		?>
-		<title>Youtube Clone - Toronto Comedy - File uploaded succesfully!</title>
+		<title>TorCom - File uploaded succesfully!</title>
 		</head>
 		<body>
 		<h1>File uploaded succesfully!</h1>
