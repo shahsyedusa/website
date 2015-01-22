@@ -16,7 +16,6 @@
 		echo '<!DOCTYPE html>';
 		echo '<html>';
 		echo '<head>';
-		echo '<link rel="stylesheet" type="text/css" href="http://www.shahsyed.com/toronto-comedy/style.css">';
 		echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
 	}
 	

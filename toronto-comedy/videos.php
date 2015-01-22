@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="http://www.shahsyed.com/toronto-comedy/style.css"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="http://www.shahsyed.com/toronto-comedy/html5gallery/html5gallery.js"></script>
 		<title>TorCom - Latest Videos</title>
 	</head>
