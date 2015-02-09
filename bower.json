@@ -1,0 +1,21 @@
+{
+  "name": "s37syed-website",
+  "version": "0.1",
+  "authors": [
+    "Shah Syed <shah@shahsyed.com>"
+  ],
+  "description": "Portfolio of Shah Syed",
+  "license": "MIT",
+  "homepage": "http://www.shahsyed.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
