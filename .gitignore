@@ -2,3 +2,4 @@
 bower_components
 reddit/*
 !reddit/index.html
+backup
