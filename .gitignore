@@ -1,2 +1,4 @@
-#ignore everything except for the files/folders below
+#ignore everything below
 bower_components
+reddit/*
+!reddit/index.html
