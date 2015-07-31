@@ -1,4 +1,2 @@
 #ignore everything below
 bower_components
-reddit/*
-!reddit/index.html
