@@ -7,6 +7,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Shah Syed</title>
 
+     <!-- Angular Libraries -->
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -48,9 +54,18 @@
               }
             });
           </script>
-          <div class="main_content">
-            <p>we gonna replace this dynamicallywe gonna replace this dynamicallywe gonna replace this dynamicallywe gonna replace this dynamicallywe gonna replace this dynamicallywe gonna replace this dynamicallywe gonna replace this dynamicallywe gonna replace this dynamically</p>
-          </div>
+          <script>
+            System.config({
+              packages: {
+                app: {
+                  format: 'register',
+                  defaultExtension: 'js'
+                }
+              } 
+            });
+            System.import('app.js').then(null, console.error.bind(console));
+          </script>
+          <dynamic-content></dynamic-content>
         </div>
       </div>
     </div>
