@@ -1,7 +1,0 @@
-#deny access to dot files and directories that start with .
-RedirectMatch 403 /\..*$
-
-#deny access to links that do not exist
-
-#disable directory browsing
-Options All -Indexes

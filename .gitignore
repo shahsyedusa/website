@@ -1,6 +1,3 @@
 #ignore everything below
 bower_components
-reddit/*
-test/*
-!reddit/index.html
-backup
+node_modules
