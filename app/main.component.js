@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router', './home/home.component', './contact/contact.component', './projects/projects.component'], function(exports_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router', './home/home.component', './contact/contact.component', './projects/projects.component', './resume/resume.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, router_1, home_component_1, contact_component_1, projects_component_1;
+    var core_1, browser_1, router_1, home_component_1, contact_component_1, projects_component_1, resume_component_1;
     var MainComponent;
     return {
         setters:[
@@ -29,6 +29,9 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
             },
             function (projects_component_1_1) {
                 projects_component_1 = projects_component_1_1;
+            },
+            function (resume_component_1_1) {
+                resume_component_1 = resume_component_1_1;
             }],
         execute: function() {
             MainComponent = (function () {
@@ -47,6 +50,11 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
                             name: 'Home',
                             component: home_component_1.HomeComponent,
                             useAsDefault: true
+                        },
+                        {
+                            path: '/resume',
+                            name: 'Resume',
+                            component: resume_component_1.ResumeComponent
                         },
                         {
                             path: '/projects',
