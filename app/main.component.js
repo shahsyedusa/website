@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser'], function(exports_1) {
+System.register(['angular2/core', './contact/contact.component', './projects/projects.component', 'angular2/platform/browser'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +8,18 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1;
+    var core_1, contact_component_1, projects_component_1, browser_1;
     var MainComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (contact_component_1_1) {
+                contact_component_1 = contact_component_1_1;
+            },
+            function (projects_component_1_1) {
+                projects_component_1 = projects_component_1_1;
             },
             function (browser_1_1) {
                 browser_1 = browser_1_1;
@@ -25,6 +31,7 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
                 MainComponent = __decorate([
                     core_1.Component({
                         selector: 'main-app',
+                        directives: [projects_component_1.ProjectsComponent, contact_component_1.ContactComponent],
                         templateUrl: 'app/main.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
@@ -36,4 +43,4 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=main.component.js.map
