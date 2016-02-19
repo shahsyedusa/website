@@ -1,13 +1,35 @@
 import {Component} from 'angular2/core';
+import {bootstrap} from 'angular2/platform/browser'
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProjectsComponent} from './projects/projects.component';
-import {bootstrap} from 'angular2/platform/browser'
 
 @Component({
 	selector: 'main-app',
-	directives: [ProjectsComponent, ContactComponent],
-	templateUrl: 'app/main.component.html'
+	directives: [ROUTER_DIRECTIVES],
+	providers: [ROUTER_PROVIDERS],
+	templateUrl: 'app/nav.component.html'
 })
+
+@RouteConfig([
+	{
+		path: '/home',
+		name: 'Home',
+		component: HomeComponent,
+		useAsDefault: true
+	},
+	{
+		path: '/projects',
+		name: 'Projects',
+		component: ProjectsComponent
+	},
+	{
+		path: '/contact',
+		name: 'Contact',
+		component: ContactComponent
+	}
+])
 
 export class MainComponent{
 	
