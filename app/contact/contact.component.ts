@@ -6,5 +6,4 @@ import {Component} from 'angular2/core';
 })
 
 export class ContactComponent {
-	public title = 'Contact Page';
 }

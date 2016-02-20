@@ -7,13 +7,18 @@ import {RedditComponent} from './list/reddit-clone/reddit-clone.component';
 import {SpaceComponent} from './list/space-invaders/space-invaders.component';
 import {TorcomComponent} from './list/torcom/torcom.component';
 
-var projectList: string[] = [
-	"chatserver",
-	"java-poker", 
-	"joy-pad", 
-	"mappy-stars", 
-	"space-invaders",  
-	"torcom"
+interface PROJECTS {
+	url: string;
+	name: string;
+}
+
+var projectList: PROJECTS[] = [
+	{"url": "<chatserver></chatserver>", "name": "chatserver"},
+	{"url": "<java-poker></java-poker>", "name": "java-poker"}, 
+	{"url": "<joy-pad></joy-pad>", "name": "joy-pad"}, 
+	{"url": "<mappy-stars></mappy-stars>", "name": "mappy-stars"}, 
+	{"url": "<reddit-clone></reddit-clone>", "name": "space-invaders"},  
+	{"url": "<space-invaders></space-invaders>", "name": "torcom"}
 ];
 
 @Component({

@@ -18,7 +18,6 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             ContactComponent = (function () {
                 function ContactComponent() {
-                    this.title = 'Contact Page';
                 }
                 ContactComponent = __decorate([
                     core_1.Component({

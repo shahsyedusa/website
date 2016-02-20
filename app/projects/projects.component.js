@@ -38,12 +38,12 @@ System.register(['angular2/core', './list/chatserver/chatserver.component', './l
             }],
         execute: function() {
             projectList = [
-                "chatserver",
-                "java-poker",
-                "joy-pad",
-                "mappy-stars",
-                "space-invaders",
-                "torcom"
+                { "url": "<chatserver></chatserver>", "name": "chatserver" },
+                { "url": "<java-poker></java-poker>", "name": "java-poker" },
+                { "url": "<joy-pad></joy-pad>", "name": "joy-pad" },
+                { "url": "<mappy-stars></mappy-stars>", "name": "mappy-stars" },
+                { "url": "<reddit-clone></reddit-clone>", "name": "space-invaders" },
+                { "url": "<space-invaders></space-invaders>", "name": "torcom" }
             ];
             ProjectsComponent = (function () {
                 function ProjectsComponent() {
