@@ -9,7 +9,7 @@ System.register(['angular2/core', './list/chatserver/chatserver.component', './l
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, chatserver_component_1, java_poker_component_1, joypad_component_1, mappy_stars_component_1, reddit_clone_component_1, space_invaders_component_1, torcom_component_1;
-    var ProjectsComponent;
+    var projectList, ProjectsComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -37,9 +37,18 @@ System.register(['angular2/core', './list/chatserver/chatserver.component', './l
                 torcom_component_1 = torcom_component_1_1;
             }],
         execute: function() {
+            projectList = [
+                "chatserver",
+                "java-poker",
+                "joy-pad",
+                "mappy-stars",
+                "space-invaders",
+                "torcom"
+            ];
             ProjectsComponent = (function () {
                 function ProjectsComponent() {
                     this.title = 'Projects Page';
+                    this.project = projectList;
                 }
                 ProjectsComponent = __decorate([
                     core_1.Component({

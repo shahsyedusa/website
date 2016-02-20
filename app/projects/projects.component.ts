@@ -7,6 +7,15 @@ import {RedditComponent} from './list/reddit-clone/reddit-clone.component';
 import {SpaceComponent} from './list/space-invaders/space-invaders.component';
 import {TorcomComponent} from './list/torcom/torcom.component';
 
+var projectList: string[] = [
+	"chatserver",
+	"java-poker", 
+	"joy-pad", 
+	"mappy-stars", 
+	"space-invaders",  
+	"torcom"
+];
+
 @Component({
 	selector: 'projects',
 	directives: [ChatserverComponent, JavapokerComponent, JoypadComponent, MappystarsComponent, RedditComponent, SpaceComponent, TorcomComponent],
@@ -15,4 +24,6 @@ import {TorcomComponent} from './list/torcom/torcom.component';
 
 export class ProjectsComponent {
 	public title = 'Projects Page';
+	project = projectList;
 }
+
