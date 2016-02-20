@@ -1,15 +1,16 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-4">
-			<!-- navbar code-->
-			<ul class ="nav nav-pills nav-stacked">
-				<li role="presentation"><a [routerLink]="['Home']">Home</a></li>
-				<li role="presentation"><a [routerLink]="['Resume']">Résumé</a></li>
-				<li role="presentation"><a [routerLink]="['Projects']">Projects</a></li>
-				<li role="presentation"><a [routerLink]="['Contact']">Contact</a></li>
-			</ul>
+		<div class="col-md-2">
+			<center>
+				<ul class ="nav nav-pills nav-stacked ">
+					<li class="active"><a [routerLink]="['Home']">Home</a></li>
+					<li><a [routerLink]="['Resume']">Résumé</a></li>
+					<li><a [routerLink]="['Projects']">Projects</a></li>
+					<li><a [routerLink]="['Contact']">Contact</a></li>
+				</ul>
+			</center>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-10">
 			<router-outlet></router-outlet>
 		</div> 
 </div>
