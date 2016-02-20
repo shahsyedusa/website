@@ -28,7 +28,7 @@ var projectList: PROJECTS[] = [
 })
 
 export class ProjectsComponent {
-	public title = 'Projects Page';
+	public title = 'Projects';
 	project = projectList;
 }
 

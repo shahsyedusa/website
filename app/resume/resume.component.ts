@@ -6,5 +6,5 @@ import {Component} from 'angular2/core';
 })
 
 export class ResumeComponent {
-	public title = 'Résumé Page';
+	public title = 'Résumé';
 }

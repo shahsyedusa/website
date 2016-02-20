@@ -1,9 +1,11 @@
 <h1>{{title}}</h1>
 <ul>
-	<li>
-		<a *ngFor="#proj of project" href="{{proj.url}}">{{proj.name}}</a>
+	<li *ngFor="#proj of project">
+		<!-- onSelect -->
+		<a href="#">{{proj.name}}</a>
 	</li>
 </ul>
+	<!-- displaySelectedProjectHere -->
 <!--
 <chatserver></chatserver>
 <java-poker></java-poker>

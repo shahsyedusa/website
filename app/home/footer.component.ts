@@ -17,18 +17,8 @@ var SOCIAL: socs[] = [
 
 @Component({
 	selector: 'cust-footer',
-	template: `
-		<hr>
-		<center>
-			<ul class="list-inline">
-			<li *ngFor="#site of social">
-				<a href="{{site.url}}">
-					<img src={{site.img}} alt="{{site.name}}">
-				</a>
-			</li>
-			</ul>
-		</center>
-	`
+	templateUrl: 'app/home/footer.component.html',
+	styleUrls: ['app/home/styles.css']
 })
 
 export class FooterComponent {

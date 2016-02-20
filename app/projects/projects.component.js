@@ -47,7 +47,7 @@ System.register(['angular2/core', './list/chatserver/chatserver.component', './l
             ];
             ProjectsComponent = (function () {
                 function ProjectsComponent() {
-                    this.title = 'Projects Page';
+                    this.title = 'Projects';
                     this.project = projectList;
                 }
                 ProjectsComponent = __decorate([

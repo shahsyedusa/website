@@ -31,7 +31,8 @@ System.register(['angular2/core'], function(exports_1) {
                 FooterComponent = __decorate([
                     core_1.Component({
                         selector: 'cust-footer',
-                        template: "\n\t\t<hr>\n\t\t<center>\n\t\t\t<ul class=\"list-inline\">\n\t\t\t<li *ngFor=\"#site of social\">\n\t\t\t\t<a href=\"{{site.url}}\">\n\t\t\t\t\t<img src={{site.img}} alt=\"{{site.name}}\">\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t</ul>\n\t\t</center>\n\t"
+                        templateUrl: 'app/home/footer.component.html',
+                        styleUrls: ['app/home/styles.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], FooterComponent);
