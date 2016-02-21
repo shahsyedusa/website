@@ -12,13 +12,12 @@ var SOCIAL: socs[] = [
 	{"url": "http://www.linkedin.com/in/s37syed", "name": "LinkedIn", "img": "./images/linkedin.png"},
 	{"url": "http://www.stackoverflow.com/users/2951014/s37syed", "name": "StackOverflow", "img": "./images/stacko.png"},
 	{"url": "http://www.twitch.tv/shahdeys/", "name": "Twitch", "img": "./images/twitch.png"},
-	{"url": "http://www.uhunt.felix-halim.net/id/326591", "name": "UVa uHunt", "img": "./images/uva.png"},
+	{"url": "http://uhunt.felix-halim.net/id/326591", "name": "UVa uHunt", "img": "./images/uva.png"},
 ]
 
 @Component({
 	selector: 'cust-footer',
-	templateUrl: 'app/home/footer.component.html',
-	styleUrls: ['app/home/styles.css']
+	templateUrl: 'app/home/footer.component.html'
 })
 
 export class FooterComponent {
