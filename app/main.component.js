@@ -47,7 +47,6 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
                     core_1.Component({
                         selector: 'main-app',
                         directives: [router_1.ROUTER_DIRECTIVES, header_component_1.HeaderComponent, footer_component_1.FooterComponent],
-                        providers: [router_1.ROUTER_PROVIDERS],
                         templateUrl: 'app/nav.component.html'
                     }),
                     router_1.RouteConfig([
@@ -63,7 +62,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
                             component: resume_component_1.ResumeComponent
                         },
                         {
-                            path: '/projects',
+                            path: '/projects/...',
                             name: 'Projects',
                             component: projects_component_1.ProjectsComponent
                         },
@@ -78,7 +77,9 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
                 return MainComponent;
             })();
             exports_1("MainComponent", MainComponent);
-            browser_1.bootstrap(MainComponent);
+            browser_1.bootstrap(MainComponent, [
+                router_1.ROUTER_PROVIDERS
+            ]);
         }
     }
 });

@@ -1,17 +1,10 @@
-<h1>{{title}}</h1>
-<ul>
-	<li *ngFor="#proj of project">
-		<!-- onSelect -->
-		<a href="#">{{proj.name}}</a>
-	</li>
+<router-outlet></router-outlet>
+<ul class="list-inline">
+	<li><a [routerLink]="['Projects', 'Chatserver']">ChatServer</a></li>
+	<li><a [routerLink]="['Projects', 'Poker']">Javapoker</a></li>
+	<li><a [routerLink]="['Projects', 'Joy']">Joy-Pad</a></li>
+	<li><a [routerLink]="['Projects', 'Mappy']">Mappy Stars!</a></li>
+	<li><a [routerLink]="['Projects', 'Reddit']">Reddit-Clone</a></li>
+	<li><a [routerLink]="['Projects', 'Space']">Space Invaders Clone</a></li>
+	<li><a [routerLink]="['Projects', 'Torcom']">TorCom!</a></li>
 </ul>
-	<!-- displaySelectedProjectHere -->
-<!--
-<chatserver></chatserver>
-<java-poker></java-poker>
-<joy-pad></joy-pad>
-<mappy-stars></mappy-stars>
-<reddit-clone></reddit-clone>
-<space-invaders></space-invaders>
-<torcom></torcom>
--->
