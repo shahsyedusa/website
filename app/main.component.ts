@@ -39,6 +39,7 @@ import {ResumeComponent} from './resume/resume.component';
 ])
 
 export class MainComponent{
+	title = "Shah Syed";
 	
 }
 

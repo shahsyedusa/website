@@ -1,3 +1,16 @@
+<footer class="footer">
+	<center>
+		<ul class="list-inline">
+			<li *ngFor="#site of social">
+				<a href="{{site.url}}">
+					<img class="img-circle" src={{site.img}} alt="{{site.name}}">
+				</a>
+			</li>
+		</ul>
+	</center>
+</footer>
+
+<!--
 <footer>
 	<center>
 		<ul class="list-inline">
@@ -9,3 +22,4 @@
 		</ul>
 	</center>
 </footer>
+-->

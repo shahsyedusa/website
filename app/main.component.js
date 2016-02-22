@@ -42,6 +42,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
         execute: function() {
             MainComponent = (function () {
                 function MainComponent() {
+                    this.title = "Shah Syed";
                 }
                 MainComponent = __decorate([
                     core_1.Component({

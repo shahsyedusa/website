@@ -1,12 +1,15 @@
-<div class="container-fluid">
+<div class="container">
 	<br>
+	<div class="page-header">
+	<h1>{{title}}</h1>
+	</div>
 	<div class="row">
 		<div class="col-md-2">
 			<center>
 				<img src="images/logo.svg" alt="Shah" class="img-circle">
 				<br>
 				<br>
-				<ul class ="nav nav-pills nav-stacked ">
+				<ul class ="nav nav-sidebar nav-pills nav-stacked ">
 					<li><a [routerLink]="['Home']">Home</a></li>
 					<li><a [routerLink]="['Resume']">Résumé</a></li>
 					<li><a [routerLink]="['Projects']">Projects</a></li>
@@ -20,6 +23,5 @@
 		</div>
 	</div>
 </div>
-<!-- insert footer -->
-<hr>
 <cust-footer></cust-footer>
+<!-- insert footer -->
