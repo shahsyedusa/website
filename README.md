@@ -34,3 +34,6 @@ Repository for my website's development
 * Add intro animation for page
 * ~~Fix style sheets~~
 * Reorganize file structure and TypeScript classes
+* Make footer static/sticky at bottom of screen
+* Add CSS for nav sidebar, add padding for sidebar and content sections
+* Program Contact section/form to create a draft, add form validation/sanitation
