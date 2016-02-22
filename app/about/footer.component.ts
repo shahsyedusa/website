@@ -17,7 +17,7 @@ var SOCIAL: socs[] = [
 
 @Component({
 	selector: 'cust-footer',
-	templateUrl: 'app/home/footer.component.html'
+	templateUrl: 'app/about/footer.component.html'
 })
 
 export class FooterComponent {

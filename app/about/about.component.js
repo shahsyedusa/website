@@ -9,28 +9,28 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HeaderComponent;
+    var AboutComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HeaderComponent = (function () {
-                function HeaderComponent() {
-                    this.title = "Shah Syed";
+            AboutComponent = (function () {
+                function AboutComponent() {
+                    this.title = 'About';
                 }
-                HeaderComponent = __decorate([
+                AboutComponent = __decorate([
                     core_1.Component({
-                        selector: 'cust-header',
-                        templateUrl: 'app/home/header.component.html'
+                        selector: 'about-component',
+                        templateUrl: 'app/about/about.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HeaderComponent);
-                return HeaderComponent;
+                ], AboutComponent);
+                return AboutComponent;
             })();
-            exports_1("HeaderComponent", HeaderComponent);
+            exports_1("AboutComponent", AboutComponent);
         }
     }
 });
-//# sourceMappingURL=header.component.js.map
+//# sourceMappingURL=about.component.js.map

@@ -31,7 +31,7 @@ System.register(['angular2/core'], function(exports_1) {
                 FooterComponent = __decorate([
                     core_1.Component({
                         selector: 'cust-footer',
-                        templateUrl: 'app/home/footer.component.html'
+                        templateUrl: 'app/about/footer.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], FooterComponent);

@@ -1,9 +1,9 @@
 import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser'
 import {RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES} from 'angular2/router';
-import {HomeComponent} from './home/home.component';
-import {HeaderComponent} from './home/header.component';
-import {FooterComponent} from './home/footer.component';
+import {AboutComponent} from './about/about.component';
+import {HeaderComponent} from './about/header.component';
+import {FooterComponent} from './about/footer.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {ResumeComponent} from './resume/resume.component';
@@ -16,9 +16,9 @@ import {ResumeComponent} from './resume/resume.component';
 
 @RouteConfig([
 	{
-		path: '/home',
-		name: 'Home',
-		component: HomeComponent,
+		path: '/',
+		name: 'About',
+		component: AboutComponent,
 		useAsDefault: true
 	},
 	{
