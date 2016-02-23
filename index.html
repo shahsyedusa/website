@@ -10,7 +10,6 @@
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
@@ -39,15 +38,15 @@
   <!-- 3. Display the application -->
   <body>
     <main-app>Loading...</main-app>
-<script type="text/javascript">
-  $('body').delegate('.nav li a', 'click', function() {
-    var $thisLi = $(this).parents('li:first');
-    var $ul = $thisLi.parents('ul:first');
-    if (!$thisLi.hasClass('active')){
-      $ul.find('li.active').removeClass('active');
-      $thisLi.addClass('active');
-    }
-  });
-</script>
+    <script type="text/javascript">
+      $('body').delegate('.nav li a', 'click', function() {
+        var $thisLi = $(this).parents('li:first');
+        var $ul = $thisLi.parents('ul:first');
+        if (!$thisLi.hasClass('active')){
+          $ul.find('li.active').removeClass('active');
+          $thisLi.addClass('active');
+        }
+      });
+    </script>
   </body>
 </html>
