@@ -9,6 +9,7 @@ Repository for my website's development
 * Bootstrap 3  
 * jQuery  
 * LESS  
+* NodeJS
 
 ## Build/Test  
 #####Install dependencies for website  
@@ -20,7 +21,7 @@ Repository for my website's development
 #####Running Web Server  
 `npm start`  
 
-#####LESS CSS compiling  
+#####LESS CSS compiling (make sure to install Bootstrap Build Tools)
 `grunt watch`  
 
 ## Todo
