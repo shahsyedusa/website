@@ -1,8 +1,5 @@
 #ignore everything below
-bower_components/*
-!/bower_components/bootstrap/*
-bower_components/bootstrap/less/*
-!bower_components/bootstrap/less/custom.less
+bower_components
 node_modules
 typings
 typings.json
