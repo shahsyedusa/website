@@ -29,13 +29,14 @@ Repository for my website's development
 * Add section for music production/hobbies  
 * Add blogging system  
 * Add resume as a pdf or use Mozilla/Google PDF viewer/Resume viewer respectively  
-* Design Projects display system to either use bootstrap modal or make interactive thumbnails  
 * Add animate.css class  
 * Add intro animation for page  
 * Reorganize file structure and TypeScript classes  
 * Program Contact section/form to create a draft, add form validation/sanitation  
+* Add Scrollspy features to promote better UX  
 * ~~Make footer static/sticky at bottom of screen~~  
 * ~~Add CSS for nav sidebar, add padding for sidebar and content sections~~  
 * ~~Add images/logo.svg on navigation section~~  
 * ~~Add social media links on front page~~  
 * ~~Fix style sheets~~  
+* ~~Design Projects display system to either use bootstrap modal or make interactive thumbnails~~  
