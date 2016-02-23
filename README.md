@@ -34,8 +34,8 @@ Repository for my website's development
 * Add intro animation for page  
 * Reorganize file structure and TypeScript classes  
 * Program Contact section/form to create a draft, add form validation/sanitation  
-~~* Make footer static/sticky at bottom of screen~~  
-~~* Add CSS for nav sidebar, add padding for sidebar and content sections~~  
-~~* Add images/logo.svg on navigation section~~  
-~~* Add social media links on front page~~  
-~~* Fix style sheets~~  
+* ~~Make footer static/sticky at bottom of screen~~  
+* ~~Add CSS for nav sidebar, add padding for sidebar and content sections~~  
+* ~~Add images/logo.svg on navigation section~~  
+* ~~Add social media links on front page~~  
+* ~~Fix style sheets~~  
