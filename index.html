@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/">
     <title>Shah Syed</title>
-    <!-- 1. Load libraries -->
+    <!-- Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
@@ -15,13 +15,15 @@
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS plugin) -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- Favicon -->
     <link href="images/favicon.png" rel="icon">
-    <!-- 2. Configure SystemJS -->
+    <!-- Configure SystemJS -->
     <script>
       System.config({
         packages: {        
@@ -35,7 +37,7 @@
             .then(null, console.error.bind(console));
     </script>
   </head>
-  <!-- 3. Display the application -->
+  <!-- Display the application -->
   <body>
     <main-app>Loading...</main-app>
     <script type="text/javascript">
@@ -48,5 +50,6 @@
         }
       });
     </script>
+
   </body>
 </html>

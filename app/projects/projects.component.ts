@@ -1,6 +1,5 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {ProjectListComponent} from './list/projectList/projectList.component';
 import {ChatserverComponent} from './list/chatserver/chatserver.component';
 import {JavapokerComponent} from './list/java-poker/java-poker.component';
 import {JoypadComponent} from './list/joypad/joypad.component';
@@ -11,21 +10,16 @@ import {TorcomComponent} from './list/torcom/torcom.component';
 
 @Component({
 	selector: 'projects',
-	directives: [ROUTER_DIRECTIVES, ProjectListComponent, ChatserverComponent, JavapokerComponent, JoypadComponent, MappystarsComponent, RedditComponent, SpaceComponent, TorcomComponent],
+	directives: [ROUTER_DIRECTIVES, ChatserverComponent, JavapokerComponent, JoypadComponent, MappystarsComponent, RedditComponent, SpaceComponent, TorcomComponent],
 	templateUrl: 'app/projects/projects.component.html'
 })
 
 @RouteConfig([
 	{
-		path: '/',
-		name: 'ProjectList',
-		component: ProjectListComponent,
-		useAsDefault: true
-	},
-	{
 		path: '/chatserver',
 		name: 'Chatserver',
-		component: ChatserverComponent
+		component: ChatserverComponent,
+		useAsDefault: true
 	},
 	{
 		path: '/java-poker',

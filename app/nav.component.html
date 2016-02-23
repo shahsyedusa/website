@@ -5,16 +5,36 @@
 		<!-- sidebar -->
 		<div class="col-md-2">
 			<center>
-			<div class="page-header">
-				<h1>{{title}}</h1>
-			</div>
+				<div class="page-header">
+					<h1>{{title}}</h1>
+				</div>
+				
 				<img src="images/logo.svg" alt="Shah" class="img-circle">
 				<ul class ="nav nav-pills nav-stacked">
 					<br>
-					<li><a [routerLink]="['About']">Home</a></li>
-					<li><a [routerLink]="['Resume']">Résumé</a></li>
-					<li><a [routerLink]="['Projects']">Projects</a></li>
-					<li><a [routerLink]="['Contact']">Contact</a></li>
+					<li>
+						<a [routerLink]="['About']">
+							<span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li>
+						<a [routerLink]="['Resume']">
+							<span class="glyphicon glyphicon-education"></span> Résumé
+						</a>
+					</li>
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	<span class="glyphicon glyphicon-th-list"></span> Projects
+					    </a>
+					    <ul class="dropdown-menu">
+					      <li><a [routerLink]="['Projects', 'Chatserver']">ChatServer</a></li>
+					      <li><a [routerLink]="['Projects', 'Poker']">Javapoker</a></li>
+					      <li><a [routerLink]="['Projects', 'Joy']">Joy-Pad</a></li>
+					      <li><a [routerLink]="['Projects', 'Mappy']">Mappy Stars!</a></li>
+					      <li><a [routerLink]="['Projects', 'Reddit']">Reddit-Clone</a></li>
+					      <li><a [routerLink]="['Projects', 'Space']">Space Invaders Clone</a></li>
+					      <li><a [routerLink]="['Projects', 'Torcom']">TorCom!</a></li>
+					    </ul>
+					<li><a [routerLink]="['Contact']">
+					<span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
 				</ul>
 			</center>
 		</div>
