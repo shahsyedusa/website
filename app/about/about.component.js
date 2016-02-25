@@ -20,7 +20,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AboutComponent = (function () {
                 function AboutComponent() {
-                    this.title = 'About';
+                    this.title = 'Home';
                 }
                 AboutComponent = __decorate([
                     core_1.Component({

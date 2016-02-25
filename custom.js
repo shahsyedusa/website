@@ -12,6 +12,7 @@ $('body').delegate('.nav li a', 'click', function() {
   var $ul = $thisLi.parents('ul:first');
   if (!$thisLi.hasClass('active')){
     $ul.find('li.active').removeClass('active');
-    $thisLi.addClass('active');       
+    $thisLi.addClass('active');
   }
 });
+

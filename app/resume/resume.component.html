@@ -1,17 +1,19 @@
-<div class="page-header">
-	<h1>{{title}}</h1>
-</div>
+<div class="animated fadeIn">
+  <div class="page-header">
+    <h1>{{title}}</h1>
+  </div>
 
-<center>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Click here to view the resume in a pop-up</button>
-<br>
-<br>
-<!-- New window popup -->
-<a href="http://www.shahsyed.com/resume.pdf" target="_blank"><button type="button" class="btn btn-primary">Or click here to open a new tab with the resume</button></a>
-</center>
+  <center>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".resumeModal">Click here to view the resume in a pop-up</button>
+  <br>
+  <br>
+  <!-- New window popup -->
+  <a href="http://www.shahsyed.com/resume.pdf" target="_blank"><button type="button" class="btn btn-primary">Or click here to open a new tab with the resume</button></a>
+  </center>
+</div>
 <!-- Large modal -->
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="modal fade resumeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
   <div class="modal-content">
     <div class="modal-header">
@@ -20,10 +22,10 @@
     </div>
     <div class="modal-body">
       <center>
-      	<object data="http://www.shahsyed.com/resume.pdf" type="application/pdf" width="100%" height="740px">
-      		<p>It appears you don't have a PDF plugin for this browser. Click <a href="http://www.shahsyed.com/resume.pdf">here to download the resume.</a>
-      		</p>
-      	</object>
+        <object data="http://www.shahsyed.com/resume.pdf" type="application/pdf" width="100%" height="740px">
+          <p>It appears you don't have a PDF plugin for this browser. Click <a href="http://www.shahsyed.com/resume.pdf">here to download the resume.</a>
+          </p>
+        </object>
       </center>
     </div>
     <div class="modal-footer">

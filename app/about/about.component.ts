@@ -6,6 +6,6 @@ import {Component} from 'angular2/core';
 })
 
 export class AboutComponent {
-	public title = 'About';
+	public title = 'Home';
 
 }
