@@ -28,12 +28,16 @@ Repository for my website's development
 
 * Add section for music production/hobbies  
 * Add blogging system  
-* Add resume as a pdf or use Mozilla/Google PDF viewer/Resume viewer respectively  
-* Add animate.css class  
-* Add intro animation for page  
 * Reorganize file structure and TypeScript classes  
-* Program Contact section/form to create a draft, add form validation/sanitation  
+* Add SEO to site
+* Validate HTML
+* Deploy site (go live!)
+* Add page analytics
+* Add Contact section/form to create a draft, add form validation/sanitation  
 * Add Scrollspy features to promote better UX  
+* ~~Add resume as a pdf or use Mozilla/Google PDF viewer/Resume viewer respectively~~  
+* ~~Add animate.css class~~  
+* ~~Add intro animation for page~~  
 * ~~Make footer static/sticky at bottom of screen~~  
 * ~~Add CSS for nav sidebar, add padding for sidebar and content sections~~  
 * ~~Add images/logo.svg on navigation section~~  
