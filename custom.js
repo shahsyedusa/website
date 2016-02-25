@@ -15,4 +15,3 @@ $('body').delegate('.nav li a', 'click', function() {
     $thisLi.addClass('active');
   }
 });
-
