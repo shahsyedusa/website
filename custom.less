@@ -148,16 +148,24 @@ body {
 }
 
 /* Gray fade out on images */
-img.img-circle {
-  filter: gray; /* IE6-9 */
-  -webkit-transition: all .6s ease;
-  -webkit-filter: grayscale(100%); 
-}
-
 img.img-circle:hover {
-  filter: none;
-  -webkit-transition: all .6s ease; 
   -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+  filter: grayscale(0%);
+} 
+
+img.img-circle{
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+  filter: grayscale(100%);
 }
 
 /* Move Bootstrap columns to the left */
