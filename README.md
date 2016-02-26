@@ -4,12 +4,12 @@ Repository for my website's development
 ## Software used  
 * AngularJS2 (via TypeScript)  
 * HTML5  
-* JS  
+* JavaScript  
 * CSS3  
 * Bootstrap 3  
 * jQuery  
-* LESS  
-* NodeJS
+* Less  
+* NodeJS  
 
 ## Build/Test  
 #####Install dependencies for website  
@@ -30,11 +30,11 @@ Repository for my website's development
 * Add blogging system  
 * Reorganize file structure and TypeScript classes  
 * Add SEO to site
-* Validate HTML
-* Deploy site (go live!)
-* Add page analytics
 * Add Contact section/form to create a draft, add form validation/sanitation  
 * Add Scrollspy features to promote better UX  
+* ~~Validate HTML~~  
+* ~~Deploy site (go live!)~~  
+* ~~Add page analytics~~  
 * ~~Add resume as a pdf or use Mozilla/Google PDF viewer/Resume viewer respectively~~  
 * ~~Add animate.css class~~  
 * ~~Add intro animation for page~~  
