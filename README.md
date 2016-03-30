@@ -26,6 +26,7 @@ Repository for my website's development
 
 ## Todo
 
+* Fix bug where hotlinking a page should highlight nav menu  
 * Add section for music production/hobbies  
 * Add blogging system  
 * Reorganize file structure and TypeScript classes  
