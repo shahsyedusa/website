@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router', './about/about.component', './about/header.component', './about/footer.component', './contact/contact.component', './projects/projects.component', './resume/resume.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router', './about/about.component', './about/footer.component', './contact/contact.component', './projects/projects.component', './resume/resume.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, router_1, about_component_1, header_component_1, footer_component_1, contact_component_1, projects_component_1, resume_component_1;
+    var core_1, browser_1, router_1, about_component_1, footer_component_1, contact_component_1, projects_component_1, resume_component_1;
     var MainComponent;
     return {
         setters:[
@@ -25,9 +25,6 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
             },
             function (about_component_1_1) {
                 about_component_1 = about_component_1_1;
-            },
-            function (header_component_1_1) {
-                header_component_1 = header_component_1_1;
             },
             function (footer_component_1_1) {
                 footer_component_1 = footer_component_1_1;
@@ -49,7 +46,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'angular2/router'
                 MainComponent = __decorate([
                     core_1.Component({
                         selector: 'main-app',
-                        directives: [router_1.ROUTER_DIRECTIVES, header_component_1.HeaderComponent, footer_component_1.FooterComponent],
+                        directives: [router_1.ROUTER_DIRECTIVES, footer_component_1.FooterComponent],
                         templateUrl: 'app/nav.component.html'
                     }),
                     router_1.RouteConfig([

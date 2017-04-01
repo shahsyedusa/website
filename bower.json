@@ -2,11 +2,11 @@
   "name": "s37syed-website",
   "version": "1.0",
   "authors": [
-    "Shah Syed <shah@shahsyed.com>"
+    "Shah Syed <shah@shahsyed.me>"
   ],
   "description": "Portfolio of Shah Syed",
   "license": "MIT",
-  "homepage": "http://www.shahsyed.com",
+  "homepage": "http://www.shahsyed.me",
   "private": true,
   "ignore": [
     "**/.*",
