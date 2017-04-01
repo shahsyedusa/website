@@ -21,7 +21,7 @@ Repository for my website's development
 ##### Running Web Server  
 `npm start`  
 
-##### LESS CSS compiling (make sure to install Bootstrap Build Tools)
+##### LESS CSS compiling (make sure to do npm install in bower_components)
 `grunt watch`  
 
 ## Todo
