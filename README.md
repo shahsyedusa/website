@@ -12,20 +12,23 @@ Repository for my website's development
 * NodeJS  
 
 ## Build/Test  
-#####Install dependencies for website  
+##### Install dependencies for website  
 `$ npm install`  
 
-#####Installing Bootstrap 3  
+##### Installing Bootstrap 3  
 `$ bower install`  
 
-#####Running Web Server  
+##### Running Web Server  
 `npm start`  
 
-#####LESS CSS compiling (make sure to install Bootstrap Build Tools)
+##### LESS CSS compiling (make sure to install Bootstrap Build Tools)
 `grunt watch`  
 
 ## Todo
-
+* Fix branching system to use GitFlow
+* Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)
+* Create build scripts for production
+* Clean up classes
 * Fix bug where hotlinking a page should highlight nav menu  
 * Add section for music production/hobbies  
 * Add blogging system  
