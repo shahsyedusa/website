@@ -36,6 +36,7 @@ Repository for my website's development
 * Add SEO to site
 * Add Contact section/form to create a draft, add form validation/sanitation  
 * Add Scrollspy features to promote better UX  
+* Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * ~~Validate HTML~~  
 * ~~Deploy site (go live!)~~  
 * ~~Add page analytics~~  
