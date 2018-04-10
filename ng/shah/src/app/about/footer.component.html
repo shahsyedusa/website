@@ -1,12 +1,14 @@
 <hr>
-<footer class="footer animated fadeIn">
-	<div class="page-header">
-		<ul class="list-inline">
-			<li *ngFor="site of social">
-				<a href="{{site.url}}">
-					<img class="img-circle" src={{site.img}} alt="{{site.name}}">
-				</a>
-			</li>
-		</ul>
-	</div>
-</footer>
+<div style="text-align:center">
+	<footer class="footer animated fadeIn">
+		<div class="page-header">
+			<ul class="list-inline">
+				<li *ngFor="let site of social">
+					<a href="{{site.url}}">
+						<img class="img-circle" src="{{site.img}}" alt="image">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div>

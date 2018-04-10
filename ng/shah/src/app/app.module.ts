@@ -9,7 +9,13 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AppRoutingModule } from './/app-routing.module';
-
+import {ChatserverComponent} from './projects/list/chatserver/chatserver.component';
+import {JavapokerComponent} from './projects/list/java-poker/java-poker.component';
+import {JoypadComponent} from './projects/list/joypad/joypad.component';
+import {MappystarsComponent} from './projects/list/mappy-stars/mappy-stars.component';
+import {RedditComponent} from './projects/list/reddit-clone/reddit-clone.component';
+import {SpaceComponent} from './projects/list/space-invaders/space-invaders.component';
+import {TorcomComponent} from './projects/list/torcom/torcom.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +23,19 @@ import { AppRoutingModule } from './/app-routing.module';
     AboutComponent,
     FooterComponent,
     ContactComponent,
-    ProjectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    ChatserverComponent,
+    JavapokerComponent,
+    JoypadComponent,
+    MappystarsComponent,
+    RedditComponent,
+    SpaceComponent,
+    TorcomComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

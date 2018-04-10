@@ -7,11 +7,11 @@ import { ResumeComponent }   from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
   
 const routes: Routes = [
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
+  { path: '', component: AboutComponent, pathMatch: 'full' },
+  // { path: 'home', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'resume', component: ResumeComponent },
-  { path: 'projects', component: ProjectsComponent },
+  { path: 'projects/...', component: ProjectsComponent },
   ];
  
 @NgModule({
