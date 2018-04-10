@@ -1,0 +1,33 @@
+<div class="animated fadeIn">
+  <div class="page-header">
+    <h1>{{title}}</h1>
+  </div>
+  <p>The project was created for an intro to Computer Networking course. The goal of the project was to create a multithreaded server, so that multiple clients could connect to it at the same time, and communicate to each other.
+
+  <br><br>The default port number used was 1025, to create/write to the sockets. You may need to edit the 'port' variables on the P2PServer and P2PClient, or else the program may not work.
+
+  <br><br>To run the server, execute P2PServer after you compile it. Clients can connect by compiling and running P2PClient. Clients can use /quit (to leave the server), /query (to check how many users are connected), and /time (to view the time you joined the server).</p>
+  <h2>Screenshot</h2>
+  <a href="#" data-toggle="modal" data-target=".chatModal">A screenshot is available here.</a>
+  <h2>Download</h2>
+  <a href="https://github.com/s37syed/chatserver">Source files are available here.</a>
+</div>
+<!-- Large modal -->
+<div class="modal fade chatModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">{{title}} screenshot</h4>
+    </div>
+    <div class="modal-body">
+      <div style="text-align:center">
+        <img src="http://i.imgur.com/YubEjfM.jpg" alt="Shah" width="100%" height="100%">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+</div>

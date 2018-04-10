@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1">
+    </div>
+    <!-- sidebar -->
+    <div class="col-md-2 animated fadeIn">
+      <div style="text-align:center">
+        <div class="page-header">
+          <h1>Shah Syed</h1>
+        </div>
+        <a routerLink="/"><img src="assets/logo.svg" alt="Shah" class="img-circle"></a>
+      </div>
+      <br>
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a routerLink="/">
+                  <span class="glyphicon glyphicon-home"></span> Home
+                </a>
+              </li>
+              <li>
+                <a routerLink="/resume">
+                  <span class="glyphicon glyphicon-education"></span> Résumé
+                </a>
+              </li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-th-list"></span> Projects
+                  </a>
+                  <ul class="dropdown-menu">
+                   <li><a routerLink="/chatserver">ChatServer</a></li>
+                   <li><a routerLink="/java-poker">Javapoker</a></li>
+                   <li><a routerLink="/joy-pad">Joy-Pad</a></li>
+                   <li><a routerLink="/mappy-stars">Mappy Stars!</a></li>
+                   <li><a routerLink="/reddit-clone">Reddit-Clone</a></li>
+                   <li><a routerLink="/space">Space Invaders Clone</a></li>
+                   <li><a routerLink="/torcom">TorCom!</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a routerLink="/contact">
+                  <span class="glyphicon glyphicon-envelope"></span> Contact
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+
+    </div>
+    <div class="col-md-1">
+    </div>
+    <!-- main content -->
+    <div class="col-md-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<!-- insert footer -->
+<cust-footer></cust-footer>
+

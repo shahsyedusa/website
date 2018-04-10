@@ -2,40 +2,51 @@
 Repository for my website's development
 
 ## Software used  
-* AngularJS2 (via TypeScript)  
+* AngularJS 5 (via TypeScript)  
 * HTML5  
 * JavaScript  
 * CSS3  
-* Bootstrap 3  
-* jQuery  
-* Less  
+* Bootstrap 4  
+* jQuery 
 * NodeJS  
 
 ## Build/Test  
-##### Install dependencies for website  
+##### Install dependencies
 `$ npm install`  
 
-##### Installing Bootstrap 3  
-`$ bower install`  
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-##### Running Web Server  
-`npm start`  
+## Development server
 
-##### LESS CSS compiling (make sure to do npm install in bower_components)
-`grunt watch`  
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Todo
 * Fix branching system to use GitFlow
-* Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)
-* Create build scripts for production
+* ~~Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)~~
+* ~~Create build scripts for production~~
 * Clean up classes
 * Fix bug where hotlinking a page should highlight nav menu  
 * Add section for music production/hobbies  
 * Add blogging system  
 * Reorganize file structure and TypeScript classes  
 * Add SEO to site
-* Add Contact section/form to create a draft, add form validation/sanitation  
-* Add Scrollspy features to promote better UX  
+* ~~Add Contact section/form to create a draft, add form validation/sanitation~~
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * ~~Validate HTML~~  
 * ~~Deploy site (go live!)~~  
