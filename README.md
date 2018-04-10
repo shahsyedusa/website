@@ -2,40 +2,32 @@
 Repository for my website's development
 
 ## Software used  
-* AngularJS2 (via TypeScript)  
+* AngularJS 5 (via TypeScript)  
 * HTML5  
 * JavaScript  
 * CSS3  
-* Bootstrap 3  
-* jQuery  
-* Less  
+* Bootstrap 4  
+* jQuery 
 * NodeJS  
 
 ## Build/Test  
 ##### Install dependencies for website  
 `$ npm install`  
 
-##### Installing Bootstrap 3  
-`$ bower install`  
-
 ##### Running Web Server  
-`npm start`  
-
-##### LESS CSS compiling (make sure to do npm install in bower_components)
-`grunt watch`  
+`ng serve`   
 
 ## Todo
 * Fix branching system to use GitFlow
-* Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)
-* Create build scripts for production
+* ~~Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)~~
+* ~~Create build scripts for production~~
 * Clean up classes
 * Fix bug where hotlinking a page should highlight nav menu  
 * Add section for music production/hobbies  
 * Add blogging system  
 * Reorganize file structure and TypeScript classes  
 * Add SEO to site
-* Add Contact section/form to create a draft, add form validation/sanitation  
-* Add Scrollspy features to promote better UX  
+* ~~Add Contact section/form to create a draft, add form validation/sanitation~~
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * ~~Validate HTML~~  
 * ~~Deploy site (go live!)~~  
