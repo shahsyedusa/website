@@ -10,8 +10,7 @@ Repository for my website's development
 * jQuery 
 * NodeJS  
 
-## Build/Test  
-##### Install dependencies
+## Install dependencies
 `$ npm install`  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
