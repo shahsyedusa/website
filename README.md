@@ -14,8 +14,11 @@ Repository for my website's development
 ##### Install dependencies for website  
 `$ npm install`  
 
-##### Running Web Server  
+##### Running Local Dev Server  
 `ng serve`   
+
+##### Build Prod
+`ng build --prod` 
 
 ## Todo
 * Fix branching system to use GitFlow
