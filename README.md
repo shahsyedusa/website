@@ -35,6 +35,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## NG specific gotchas
+`ng update @angular/cli --migrate-only --from=1.x.x`
+ * update version of ng 
+
 ## Todo
 * Add CI/CD pipeline
 * ~~Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)~~
