@@ -36,7 +36,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Todo
-* Fix branching system to use GitFlow
+* Add CI/CD pipeline
 * ~~Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)~~
 * ~~Create build scripts for production~~
 * Clean up classes
