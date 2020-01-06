@@ -51,6 +51,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Add blogging system  
 * Reorganize file structure and TypeScript classes  
 * Add SEO to site
+* remove DS store from repo
 * ~~Add Contact section/form to create a draft, add form validation/sanitation~~
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * Add Spotify profile to footer
