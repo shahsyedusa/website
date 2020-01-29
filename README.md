@@ -40,6 +40,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  * update version of ng 
 
 ## Todo
+* Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add CI/CD pipeline
 * Update proj. dependencies and remove security vulns
 * ~~Update to NG 8~~
