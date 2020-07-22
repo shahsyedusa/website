@@ -40,6 +40,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  * update version of ng 
 
 ## Todo
+* Add trivial unit tests
 * Update to Angular 10
 * Add HTTPS to not make website throw errors when visiting
 * Add SoundCloud link to bottom of navbar
