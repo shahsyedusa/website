@@ -60,7 +60,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * ~~Add Contact section/form to create a draft, add form validation/sanitation~~
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * Add Spotify profile to footer
-* Fix bug where footer is like weird and not responsive
+* Fix bug where you scroll down and footer is not responsive and there are spacing issues around it
 * ~~Validate HTML~~  
 * ~~Deploy site (go live!)~~  
 * ~~Add page analytics~~  
