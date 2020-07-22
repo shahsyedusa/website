@@ -40,6 +40,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  * update version of ng 
 
 ## Todo
+* Update to Angular 10
+* Add HTTPS to not make website throw errors when visiting
 * Add SoundCloud link to bottom of navbar
 * Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add CI/CD pipeline
