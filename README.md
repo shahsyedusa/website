@@ -1,14 +1,28 @@
 # s37syed-website  
 Repository for my website's development
 
+
+## Docker specific commands  
+- `docker build -f Dockerfile -t website:prod-<version-number> .`
+   - this will build the docker file and tag it with website:prod<version-number>
+- `docker run -it -p 80:80 --rm website:prod-<version-number>`
+   - this will run the docker image locally
+- `docker tag website:prod-1.0.0 shahdeys/website:1.0.0`
+   - this will tag the image to prep it for release
+- `docker push shahdeys/website:1.0.0`
+   - this will push to docker hub
+- `docker run -p 3000:3000 shahdeys/website:1.0.0`
+   - command to run on prod server to run container
+- docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
+
 ## Software used  
-* AngularJS 8 (TypeScript)  
+* AngularJS 8.3.29 (TypeScript)  
 * HTML5  
 * JavaScript  
 * CSS3  
 * Bootstrap 4  
 * jQuery 
-* NodeJS  
+* NodeJS 12.18.3
 
 ## Install dependencies
 `$ npm install`  
@@ -25,7 +39,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
@@ -40,7 +54,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  * update version of ng 
 
 ## Todo
-* Dockerize NodeJS application
+* ~~Dockerize NodeJS application~~
 * Add trivial unit tests
 * Update to Angular 10
 * Add HTTPS to not make website throw errors when visiting
