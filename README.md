@@ -1,5 +1,5 @@
-# s37syed-website  
-Repository for my website's development
+# shahsyed.com  
+Repository for my virtual presence on the interwebs
 
 
 ## Docker specific commands  
@@ -23,8 +23,24 @@ Repository for my website's development
 * Bootstrap 4  
 * jQuery 
 * NodeJS 12.18.3
+* nginx mainline
+* Docker
+* Docker Compose
 
-## Install dependencies
+## Docker specific commands  
+- `docker build -f Dockerfile -t website:prod-<version-number> .`
+   - this will build the docker file and tag it with website:prod<version-number>
+- `docker run -it -p 80:80 --rm website:prod-<version-number>`
+   - this will run the docker image locally
+- `docker tag website:prod-1.0.0 shahdeys/website:1.0.0`
+   - this will tag the image to prep it for release
+- `docker push shahdeys/website:1.0.0`
+   - this will push to docker hub
+- `docker run -p 3000:3000 shahdeys/website:1.0.0`
+   - command to run on prod server to run container
+- docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
+
+## Node specific commands
 `$ npm install`  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
@@ -54,28 +70,29 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  * update version of ng 
 
 ## Todo
-* ~~Dockerize NodeJS application~~
-* Add trivial unit tests
-* Update to Angular 10
-* Add HTTPS to not make website throw errors when visiting
+* Add robots.txt
+* Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
+* Fix bug where you scroll down and footer is not responsive and there are spacing issues around it
+* Fix bug where hotlinking a page should highlight nav menu 
+* Add Spotify profile to footer
+* Update proj. dependencies and remove security vulns
+* Clean up classes
+* Reorganize file structure and TypeScript classes  
+* Add SEO to site
+* Add blogging system
 * Add SoundCloud link to bottom of navbar
 * Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
+* Add section for music production/hobbies  
 * Add CI/CD pipeline
-* Update proj. dependencies and remove security vulns
+* Add trivial unit tests
+* Update to Angular 10
+* ~~remove DS store from repo~~
+* ~~Add HTTPS to not make website throw errors when visiting~~
+* ~~Dockerize NodeJS application~~
 * ~~Update to NG 8~~
 * ~~Update site from AngularJS 2.0 Beta 7 to Angular (AngularJS 4.0)~~
 * ~~Create build scripts for production~~
-* Clean up classes
-* Fix bug where hotlinking a page should highlight nav menu  
-* Add section for music production/hobbies  
-* Add blogging system  
-* Reorganize file structure and TypeScript classes  
-* Add SEO to site
-* remove DS store from repo
 * ~~Add Contact section/form to create a draft, add form validation/sanitation~~
-* Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
-* Add Spotify profile to footer
-* Fix bug where you scroll down and footer is not responsive and there are spacing issues around it
 * ~~Validate HTML~~  
 * ~~Deploy site (go live!)~~  
 * ~~Add page analytics~~  

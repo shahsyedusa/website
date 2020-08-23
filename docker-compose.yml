@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  shah-website:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: shah-website
+    restart: unless-stopped
+    expose:
+     - 80
+    environment:
+      HTTP_PORT: 80
+      VIRTUAL_HOST: www.shahsyed.com
+      LETSENCRYPT_HOST: www.shahsyed.com
+      LETSENCRYPT_EMAIL: "shah@shahsyed.com"
+    networks:
+      app-network:
+
+  oracle:
+    image: shahdeys/oracle:0.0.1
+    container_name: oracle-bachao
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: bachao.shahsyed.com
+      LETSENCRYPT_HOST: bachao.shahsyed.com
+      LETSENCRYPT_EMAIL: "shah@shahsyed.com"
+    networks:
+      app-network:
+
+  web-redirect:
+    image: adamkdean/redirect
+    environment:
+      VIRTUAL_HOST: shahsyed.com
+      LETSENCRYPT_HOST: shahsyed.com
+      LETSENCRYPT_EMAIL: "shah@shahsyed.com"
+      REDIRECT_LOCATION: "https://www.shahsyed.com"
+    networks:
+      app-network:
+
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    ports:
+      - 80:80
+      - 443:443
+    container_name: nginx-proxy
+    networks:
+      app-network:
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - nginx-certs:/etc/nginx/certs
+      - nginx-vhost:/etc/nginx/vhost.d
+      - nginx-html:/usr/share/nginx/html
+
+  nginx-proxy-letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    environment:
+      NGINX_PROXY_CONTAINER: "nginx-proxy"
+    networks:
+      app-network:
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - nginx-certs:/etc/nginx/certs
+      - nginx-vhost:/etc/nginx/vhost.d
+      - nginx-html:/usr/share/nginx/html
+
+networks:
+  app-network:
+
+volumes:
+  nginx-certs:
+  nginx-vhost:
+  nginx-html:
