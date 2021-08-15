@@ -1,6 +1,6 @@
 /*!
  * custom.js
- * Custom JS script for s37syed-website 1.0.0
+ * Custom JS script for shahsyed-website 1.0.0
  * Written by Shah Syed
  */
 

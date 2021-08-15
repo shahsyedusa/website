@@ -18,7 +18,7 @@ services:
       app-network:
 
   oracle:
-    image: shahdeys/oracle:0.0.1
+    image: shahdeys/oracle:0.0.2
     container_name: oracle-bachao
     restart: unless-stopped
     environment:

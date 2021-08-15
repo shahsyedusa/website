@@ -1,17 +1,8 @@
-##################################
-### devl + ssl first time init ###
-##################################
-
 # base image
-FROM debian:latest as build
+FROM mhart/alpine-node:12.22.3 as build
 
 # set working directory
 WORKDIR /app
-
-# download wget and nodejs
-RUN apt-get update && apt-get install -y wget     		
-RUN wget https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get update && apt install -y nodejs npm
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
@@ -19,27 +10,18 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install and cache app dependencies
 COPY package.json /app/package.json
 RUN npm install
-RUN npm install -g @angular/cli@8.3.29
 
 # add app
 COPY . /app
 
-# generate build
-RUN ng build --prod
+# add resume, get dependency first
+RUN apk update \                                                                                                                                                                                                                        
+    &&  apk add ca-certificates wget \                                                                                                                                                                                                      
+    &&  update-ca-certificates  \
+    &&  wget -O resume.pdf https://raw.githubusercontent.com/shahdeys/resume/master/resume.pdf
 
-# add resume
-COPY resume.pdf /app/dist/resume.pdf
+# expose 4200 and DEBUG 9229
+EXPOSE 9229
+EXPOSE 4200
 
-# base image
-FROM nginx:1.16.0-alpine
-
-RUN apk update && apk add netcat-openbsd bc curl wget git bash openssl libressl
-
-# copy artifact build from the 'build environment'
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# expose port 80
-EXPOSE 80
-
-# run nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ng serve --host 0.0.0.0 --port 4200

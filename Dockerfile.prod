@@ -3,7 +3,7 @@
 ############
 
 # base image
-FROM mhart/alpine-node:12.18.3 as build
+FROM mhart/alpine-node:12.22.3 as build
 
 # set working directory
 WORKDIR /app
@@ -22,8 +22,12 @@ COPY . /app
 # generate build
 RUN ng build --prod
 
-# add resume
-COPY resume.pdf /app/dist/resume.pdf
+# add resume, get dependency first
+RUN apk update \                                                                                                                                                                                                                        
+    &&  apk add ca-certificates wget \                                                                                                                                                                                                      
+    &&  update-ca-certificates  \
+    &&  wget -O resume.pdf https://raw.githubusercontent.com/shahdeys/resume/master/resume.pdf \
+    &&  cp resume.pdf /app/dist/resume.pdf
 
 # base image
 FROM nginx:1.16.0-alpine

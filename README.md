@@ -1,19 +1,5 @@
-# shahsyed.com  
-Repository for my virtual presence on the interwebs
-
-
-## Docker specific commands  
-- `docker build -f Dockerfile -t website:prod-<version-number> .`
-   - this will build the docker file and tag it with website:prod<version-number>
-- `docker run -it -p 80:80 --rm website:prod-<version-number>`
-   - this will run the docker image locally
-- `docker tag website:prod-1.0.0 shahdeys/website:1.0.0`
-   - this will tag the image to prep it for release
-- `docker push shahdeys/website:1.0.0`
-   - this will push to docker hub
-- `docker run -p 3000:3000 shahdeys/website:1.0.0`
-   - command to run on prod server to run container
-- docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
+# shahsyed-website  
+Repository for my website's development
 
 ## Software used  
 * AngularJS 8.3.29 (TypeScript)  
@@ -22,70 +8,43 @@ Repository for my virtual presence on the interwebs
 * CSS3  
 * Bootstrap 4  
 * jQuery 
-* NodeJS 12.18.3
+* NodeJS 12.22.3
 * nginx mainline
 * Docker
 * Docker Compose
+  
+## Docker Compose specific commands  
+### Production
+- run docker-compose:
+  - `docker-compose up -d`
+- rebuild existing service:
+  - `docker-compose up --build shah-website`
+- rebuild service using no cache:
+  - `docker-compose build --no-cache shah-website`
 
 ## Docker specific commands  
-- `docker build -f Dockerfile -t website:prod-<version-number> .`
-   - this will build the docker file and tag it with website:prod<version-number>
-- `docker run -it -p 80:80 --rm website:prod-<version-number>`
-   - this will run the docker image locally
-- `docker tag website:prod-1.0.0 shahdeys/website:1.0.0`
-   - this will tag the image to prep it for release
-- `docker push shahdeys/website:1.0.0`
-   - this will push to docker hub
-- `docker run -p 3000:3000 shahdeys/website:1.0.0`
-   - command to run on prod server to run container
-- docker hub url: `https://hub.docker.com/repository/docker/shahdeys/website/general`
-
-## Node specific commands
-`$ npm install`  
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## NG specific gotchas
-`ng update @angular/cli --migrate-only --from=1.x.x`
- * update version of ng 
+### Local dev
+- `docker build --no-cache -f Dockerfile.dev -t website:latest .`
+  - this will build the local dev file with the latest tag 
+- `docker run -it -p 4200:4200 website`
+  - this will run the docker image locally
 
 ## Todo
+* Update proj. dependencies and remove security vulns
+* Add blogging system using Elixir
+* Add trivial unit tests
+* Add section for music production/hobbies
+* Add SEO to site
+* Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add robots.txt
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
-* Fix bug where you scroll down and footer is not responsive and there are spacing issues around it
 * Fix bug where hotlinking a page should highlight nav menu 
-* Add Spotify profile to footer
-* Update proj. dependencies and remove security vulns
-* Clean up classes
-* Reorganize file structure and TypeScript classes  
-* Add SEO to site
-* Add blogging system
-* Add SoundCloud link to bottom of navbar
-* Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
-* Add section for music production/hobbies  
 * Add CI/CD pipeline
-* Add trivial unit tests
-* Update to Angular 10
+* ~~Add SoundCloud link to bottom of navbar~~
+* ~~Clean up classes~~
+* ~~Reorganize file structure and TypeScript classes~~  
+* ~~Add Spotify profile to footer~~
+* ~~Fix bug where you scroll down and footer is not responsive and there are spacing issues around it~~
 * ~~remove DS store from repo~~
 * ~~Add HTTPS to not make website throw errors when visiting~~
 * ~~Dockerize NodeJS application~~

@@ -7,12 +7,12 @@ interface socs {
 }
 
 var SOCIAL: socs[] = [
-	{"url": "http://www.github.com/s37syed", "name": "GitHub", "img": "assets/github.png"},
-	{"url": "https://www.hackerrank.com/s37syed", "name": "HackerRank", "img": "assets/hackerrank.png"},
-	{"url": "http://www.linkedin.com/in/s37syed", "name": "LinkedIn", "img": "assets/linkedin.png"},
-	{"url": "http://www.stackoverflow.com/users/2951014/s37syed", "name": "StackOverflow", "img": "assets/stacko.png"},
-	{"url": "http://www.twitch.tv/shahdeys/", "name": "Twitch", "img": "assets/twitch.png"},
-	{"url": "http://uhunt.felix-halim.net/id/326591", "name": "UVa uHunt", "img": "assets/uva.png"},
+	{"url": "https://www.github.com/shahdeys", "name": "GitHub", "img": "assets/github.png"},
+	{"url": "https://stackoverflow.com/users/2951014/shah-syed", "name": "StackOverflow", "img": "assets/stacko.png"},
+	{"url": "https://www.linkedin.com/in/shahdeys", "name": "LinkedIn", "img": "assets/linkedin.png"},
+	{"url": "https://open.spotify.com/artist/7AZUoU8NuXIDMut0KcbSON", "name": "Spotify", "img": "assets/spotify.png"},
+	{"url": "https://www.soundcloud.com/shahdeys", "name": "SoundCloud", "img": "assets/soundcloud.png"},
+	{"url": "https://www.twitch.tv/shahdeys/", "name": "Twitch", "img": "assets/twitch.png"},
 ]
 
 @Component({
