@@ -40,6 +40,7 @@ Repository for my website's development
 * Fix bug where hotlinking a page should highlight nav menu 
 * Add CI/CD pipeline
 * Add reddit social link
+* ~~* Automatic SSL Certification creation and allocation~~
 * ~~* Update proj. dependencies and remove security vulns~~
 * ~~Add SoundCloud link to bottom of navbar~~
 * ~~Clean up classes~~
