@@ -30,7 +30,6 @@ Repository for my website's development
   - this will run the docker image locally
 
 ## Todo
-* Update proj. dependencies and remove security vulns
 * Add blogging system using Elixir
 * Add trivial unit tests
 * Add section for music production/hobbies
@@ -40,6 +39,8 @@ Repository for my website's development
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * Fix bug where hotlinking a page should highlight nav menu 
 * Add CI/CD pipeline
+* Add reddit social link
+* ~~* Update proj. dependencies and remove security vulns~~
 * ~~Add SoundCloud link to bottom of navbar~~
 * ~~Clean up classes~~
 * ~~Reorganize file structure and TypeScript classes~~  
