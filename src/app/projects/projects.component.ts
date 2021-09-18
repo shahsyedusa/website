@@ -1,36 +1,15 @@
 import { NgModule, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {ChatserverComponent} from './list/chatserver/chatserver.component';
-import {JavapokerComponent} from './list/java-poker/java-poker.component';
-import {JoypadComponent} from './list/joypad/joypad.component';
-import {MappystarsComponent} from './list/mappy-stars/mappy-stars.component';
-import {SpaceComponent} from './list/space-invaders/space-invaders.component';
-import {TorcomComponent} from './list/torcom/torcom.component';
-
+import {BachaoComponent} from './list/bachao/bachao.component';
+import {PythiaComponent} from './list/pythia/pythia.component';
 const projectRoutes: Routes = [
 	{
-		path: 'chatserver',
-		component: ChatserverComponent
+		path: 'bachao',
+		component: BachaoComponent
 	},
 	{
-		path: 'java-poker',
-		component: JavapokerComponent
-	},
-	{
-		path: 'joy-pad',
-		component: JoypadComponent
-	},
-	{
-		path: 'mappy-stars',
-		component: MappystarsComponent
-	},
-	{
-		path: 'space',
-		component: SpaceComponent
-	},
-	{
-		path: 'torcom',
-		component: TorcomComponent
+		path: 'pythia',
+		component: PythiaComponent
 	}
 ];
 

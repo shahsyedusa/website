@@ -9,12 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { ChatserverComponent } from './projects/list/chatserver/chatserver.component';
-import { JavapokerComponent } from './projects/list/java-poker/java-poker.component';
-import { JoypadComponent } from './projects/list/joypad/joypad.component';
-import { MappystarsComponent } from './projects/list/mappy-stars/mappy-stars.component';
-import { SpaceComponent } from './projects/list/space-invaders/space-invaders.component';
-import { TorcomComponent } from './projects/list/torcom/torcom.component';
+import { BachaoComponent } from './projects/list/bachao/bachao.component';
+import { PythiaComponent } from './projects/list/pythia/pythia.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +19,8 @@ import { TorcomComponent } from './projects/list/torcom/torcom.component';
     FooterComponent,
     ContactComponent,
     ResumeComponent,
-    ChatserverComponent,
-    JavapokerComponent,
-    JoypadComponent,
-    MappystarsComponent,
-    SpaceComponent,
-    TorcomComponent
+    BachaoComponent,
+    PythiaComponent
   ],
   imports: [
     BrowserModule,

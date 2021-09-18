@@ -30,18 +30,18 @@ Repository for my website's development
   - this will run the docker image locally
 
 ## Todo
-* Add blogging system using Elixir
 * Add trivial unit tests
 * Add section for music production/hobbies
-* Add SEO to site
-* Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com
 * Add robots.txt
 * Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
 * Fix bug where hotlinking a page should highlight nav menu 
 * Add CI/CD pipeline
 * Add reddit social link
+* Add blogging system using Jekyll
+* ~~Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com~~
+* ~~Add SEO to site~~
+* ~~Update proj. dependencies and remove security vulns~~
 * ~~* Automatic SSL Certification creation and allocation~~
-* ~~* Update proj. dependencies and remove security vulns~~
 * ~~Add SoundCloud link to bottom of navbar~~
 * ~~Clean up classes~~
 * ~~Reorganize file structure and TypeScript classes~~  
