@@ -2,16 +2,16 @@
 Repository for my website's development
 
 ## Software used  
-* AngularJS 8.3.29 (TypeScript)  
-* HTML5  
-* JavaScript  
-* CSS3  
-* Bootstrap 4  
-* jQuery 
-* NodeJS 12.22.3
+* Elixir 1.13.4
+* Phoenix LiveView 1.6
 * nginx mainline
 * Docker
 * Docker Compose
+* HTML5
+* JavaScript
+* CSS3
+* Bootstrap 4
+* jQuery
   
 ## Docker Compose specific commands  
 ### Production
@@ -30,6 +30,7 @@ Repository for my website's development
   - this will run the docker image locally
 
 ## Todo
+* Convert to Elixir
 * Add trivial unit tests
 * Add section for music production/hobbies
 * Add robots.txt

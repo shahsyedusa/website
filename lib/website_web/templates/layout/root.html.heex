@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="csrf-token" content={csrf_token_value()}>
+    <%= live_title_tag assigns[:page_title] || "Shah Syed", suffix: " · Senior Engineer and Cloud Architect" %>
+    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn,"/assets/app.css")}/>
+    <link rel="icon" type="image/x-icon" href={Routes.static_path(@conn,"/images/favicon.ico")}>
+    <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn,"/assets/app.js")}></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <!-- sidebar -->
+        <div class="col-md-2 animated fadeIn">
+            <div style="text-align:center">
+                <div class="page-header">
+                    <h1>Shah Syed</h1>
+                </div>
+                <a href="/"><img src={Routes.static_path(@conn,"/images/logo.svg")} alt="Shah" class="img-circle"></a>
+            </div>
+            <br>
+            <nav class="navbar navbar-default" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">
+                            <span class="glyphicon glyphicon-home"></span> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/resume">
+                            <span class="glyphicon glyphicon-education"></span> Résumé
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects"> Projects
+                        </a>
+                        <%= render(WebsiteWeb.ProjectsView, "projects.html") %>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            <span class="glyphicon glyphicon-envelope"></span> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="col-md-1">
+        </div>
+        <!-- main content -->
+        <div class="col-md-6">
+            <%= @inner_content %>
+        </div>
+    </div>
+</div>
+<div style="text-align:center">
+    <footer>
+        <ul>
+            <li><a href="https://www.github.com/shahdeys"><img alt="image" class="img-circle"
+                                                               src={Routes.static_path(@conn,"/images/github.png")}></a>
+            </li>
+            <li><a href="https://stackoverflow.com/users/2951014/shah-syed"><img alt="image" class="img-circle"
+                                                                                 src={Routes.static_path(@conn,"/images/stacko.png")}></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/shahdeys"><img alt="image" class="img-circle"
+                                                                    src={Routes.static_path(@conn,"/images/linkedin.png")}></a>
+            </li>
+            <li><a href="https://open.spotify.com/artist/7AZUoU8NuXIDMut0KcbSON"><img alt="image" class="img-circle"
+                                                                                      src={Routes.static_path(@conn,"/images/spotify.png")}></a>
+            </li>
+            <li><a href="https://www.soundcloud.com/shahdeys"><img alt="image" class="img-circle"
+                                                                   src={Routes.static_path(@conn,"/images/soundcloud.png")}></a>
+            </li>
+            <li><a href="https://www.twitch.tv/shahdeys/"><img alt="image" class="img-circle"
+                                                               src={Routes.static_path(@conn,"/images/twitch.png")}></a>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
