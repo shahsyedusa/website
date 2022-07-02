@@ -4,7 +4,7 @@ services:
   shah-website:
     build:
       context: .
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile
     container_name: shah-website
     restart: unless-stopped
     expose:
