@@ -24,21 +24,22 @@ Repository for my website's development
 
 ## Docker specific commands  
 ### Local dev
-- `docker build --no-cache -f Dockerfile.dev -t website:latest .`
+- `docker build --no-cache -f Dockerfile -t website:latest .`
   - this will build the local dev file with the latest tag 
-- `docker run -it -p 4200:4200 website`
-  - this will run the docker image locally
+- `docker run -it -p 4000:4000 -e SECRET_KEY_BASE="" website`
+  - this will run the docker image locally with the secret env var
 
 ## Todo
-* Convert to Elixir
+* Add blogging system using Jekyll
 * Add trivial unit tests
 * Add section for music production/hobbies
-* Add robots.txt
-* Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)
-* Fix bug where hotlinking a page should highlight nav menu 
 * Add CI/CD pipeline
 * Add reddit social link
-* Add blogging system using Jekyll
+* Fix styling sheets
+* ~~Add robots.txt~~
+* ~~Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)~~
+* ~~Fix bug where hotlinking a page should highlight nav menu~~
+* ~~Convert to Elixir~~
 * ~~Fix common issues using Google Lighthouse: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http://www.shahsyed.com~~
 * ~~Add SEO to site~~
 * ~~Update proj. dependencies and remove security vulns~~
