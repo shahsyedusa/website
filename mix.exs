@@ -45,8 +45,7 @@ defmodule Website.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"},
-      {:dart_sass, "~> 0.2", runtime: Mix.env() == :dev},
+      {:plug_cowboy, "~> 2.5"}
     ]
   end
 
@@ -61,8 +60,7 @@ defmodule Website.MixProject do
       setup: ["deps.get"],
       "assets.deploy": [
         "esbuild default --minify",
-        "phx.digest",
-        "sass default --no-source-map --style=compressed"
+        "phx.digest"
       ]
     ]
   end

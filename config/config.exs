@@ -36,14 +36,6 @@ config :esbuild,
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
   ]
 
-# Configure dart_sass (so that we can compile our stylesheets to specified assets directory)
-config :dart_sass,
-  version: "1.53.0",
-  default: [
-    args: ~w(css/app.scss ../priv/static/assets/app.css),
-    cd: Path.expand("../assets", __DIR__)
-  ]
-
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
