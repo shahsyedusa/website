@@ -23,6 +23,13 @@ defmodule WebsiteWeb.Router do
     get "/contact", ContactController, :index
   end
 
+  scope "/projects", WebsiteWeb do
+    pipe_through :browser
+
+    get "/bachao", ProjectsController, :bachao
+    get "/pythia", ProjectsController, :pythia
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", WebsiteWeb do
   #   pipe_through :api
