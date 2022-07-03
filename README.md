@@ -20,11 +20,11 @@ Repository for my website's development
   - this will run the elixir mix task to compile, then run the Phoenix LiveView web app on the configured endpoint
 
 ## Todo
-* Add CI/CD pipeline with GHAW + Fly.io
 * Add blogging system using Nimble Publisher
 * Add section for music production/hobbies
 * Add reddit social link
 * Update styling sheets to use Bootstrap 5.2
+* ~~Add CI/CD pipeline with GHAW + Fly.io~~
 * ~~Add trivial unit tests~~
 * ~~Add robots.txt~~
 * ~~Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)~~
