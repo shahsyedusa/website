@@ -4,38 +4,25 @@ Repository for my website's development
 ## Software used  
 * Elixir 1.13.4
 * Phoenix LiveView 1.6
-* nginx mainline
 * Docker
-* Docker Compose
 * HTML5
 * JavaScript
 * CSS3
-* Bootstrap 4
-* jQuery
-  
-## Docker Compose specific commands  
-### Production
-- run docker-compose:
-  - `docker-compose up -d`
-- rebuild existing service:
-  - `docker-compose up --build shah-website`
-- rebuild service using no cache:
-  - `docker-compose build --no-cache shah-website`
 
 ## Docker specific commands  
 ### Local dev
 - `docker build --no-cache -f Dockerfile -t website:latest .`
   - this will build the local dev file with the latest tag 
-- `docker run -it -p 4000:4000 -e SECRET_KEY_BASE="" website`
+- `docker run -it -p 4000:4000 -e SECRET_KEY_BASE="<secret_val_here>" website`
   - this will run the docker image locally with the secret env var
 
 ## Todo
-* Add blogging system using Jekyll
-* Add trivial unit tests
+* Add CI/CD pipeline with GHAW + Fly.io
+* Add blogging system using Nimble Publisher
 * Add section for music production/hobbies
-* Add CI/CD pipeline
 * Add reddit social link
-* Fix styling sheets
+* Update styling sheets to use Bootstrap 5.2
+* ~~Add trivial unit tests~~
 * ~~Add robots.txt~~
 * ~~Fix bug where clicking projects nav menu and then not selecting anything will still have the button highlighted on projects (even though that page isn't selected)~~
 * ~~Fix bug where hotlinking a page should highlight nav menu~~
