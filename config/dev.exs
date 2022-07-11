@@ -50,7 +50,8 @@ config :website, WebsiteWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/website_web/(live|views)/.*(ex)$",
-      ~r"lib/website_web/templates/.*(eex)$"
+      ~r"lib/website_web/templates/.*(eex)$",
+      ~r"posts/*/.*(md)$"
     ]
   ]
 

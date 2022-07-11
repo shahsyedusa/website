@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content={csrf_token_value()}>
-    <%= live_title_tag assigns[:page_title] || "Shah Syed", suffix: " · Senior Engineer and Cloud Architect" %>
+    <%= live_title_tag assigns[:page_title] || "Shah Syed", suffix: " · Senior Engineer" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn,"/assets/app.css")}/>
     <link rel="icon" type="image/x-icon" href={Routes.static_path(@conn,"/images/favicon.ico")}>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn,"/assets/app.js")}></script>
@@ -18,20 +18,25 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="/" style="text-align: left";>
+                            <a href="/" style="text-align: left" ;>
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="/resume"style="text-align: left";>
-                                Résumé
+                            <a href="/blog" style="text-align: left" ;>
+                                Blog
                             </a>
                         </li>
                         <li>
-                            <a href="/projects" style="text-align: left";>Projects</a>
+                            <a href="/resume" style="text-align: left" ;>
+                                Resume
+                            </a>
                         </li>
                         <li>
-                            <a href="/contact" style="text-align: left";>
+                            <a href="/projects" style="text-align: left" ;>Projects</a>
+                        </li>
+                        <li>
+                            <a href="/contact" style="text-align: left" ;>
                                 Contact
                             </a>
                         </li>
@@ -41,7 +46,7 @@
             <div class="column">
                 <a href="/">
                     <img class="float-left" style="border-radius: 50%; width: 120px; height: 120px; padding: 10px"
-                         src={Routes.static_path(@conn, "/images/logo.svg")} alt="Shah Syed Logo"/>
+                         src={Routes.static_path(@conn,"/images/logo.svg")} alt="Shah Syed Logo"/>
                 </a>
             </div>
             <div class="column">

@@ -1,0 +1,42 @@
+<h1>Blog</h1>
+
+<div class="container-fluid">
+    <table>
+        <thead>
+        <th style="position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0,0,0,0);
+white-space: nowrap;
+border: 0;">Date
+        </th>
+        <th style="position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    overflow: hidden;
+                    clip: rect(0,0,0,0);
+                    white-space: nowrap;
+                    border: 0;
+">Post Title
+        </th>
+        </thead>
+        <tbody>
+        <%= for post <- @posts do %>
+        <tr>
+            <td style="padding: 2px; vertical-align: top; border: 0; color: #4e5156">
+                <%= post.date %>
+            </td>
+            <td style="
+padding: 2px;
+vertical-align: top;
+            border: 0;">
+                <%= link post.title, to: Routes.blog_path(@conn, :show, post)%>
+            </td>
+        </tr>
+        <% end %>
+        </tbody>
+    </table>
+</div>
