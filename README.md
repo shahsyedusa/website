@@ -1,13 +1,13 @@
-# shahsyed-website  
-Repository for my website's development
+# website  
+Repository for Shah's portfolio website
 
 ## Software used  
 * Elixir 1.13.4
 * Phoenix LiveView 1.6
 * Docker
-* HTML5
+* HTML
 * JavaScript
-* CSS3
+* CSS
  
 ## Local dev
 ### Docker specific commands 
@@ -20,10 +20,11 @@ Repository for my website's development
   - this will run the elixir mix task to compile, then run the Phoenix LiveView web app on the configured endpoint
 
 ## Todo
-* Add blogging system using Nimble Publisher
+* Update styling sheets to use Bootstrap 5.2
+* Add more comprehensive unit tests
 * Add section for music production/hobbies
 * Add reddit social link
-* Update styling sheets to use Bootstrap 5.2
+* ~~Add blogging system using Nimble Publisher~~
 * ~~Add CI/CD pipeline with GHAW + Fly.io~~
 * ~~Add trivial unit tests~~
 * ~~Add robots.txt~~

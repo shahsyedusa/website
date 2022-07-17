@@ -1,0 +1,22 @@
+{
+    "name": "Shah Syed",
+    "short_name": "Shah",
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#d9d9d9",
+    "description": "My goal is to always build great software using the right tools for the job, and make a huge impact to streamline a team's productivity.",
+    "dir": "ltr",
+    "categories": "business,education,entertainment",
+    "lang": "en",
+    "orientation": "any",
+    "scope": "/",
+    "theme_color": "#cccccc",
+    "icons": [
+        {
+            "src": "/logo.svg",
+            "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+            "type": "svg+xml",
+            "purpose": "any"
+        }
+    ]
+}
