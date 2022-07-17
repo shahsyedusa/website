@@ -9,13 +9,13 @@
           content="Shah Syed · Senior Engineer. My goal is to always build great software using the right tools for the job, and make a huge impact to streamline a team's productivity.">
     <meta name="theme-color" content="#dad9d8"/>
     <%= live_title_tag assigns[:page_title] || "Shah Syed", suffix: " · Senior Engineer" %>
-    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn,"/assets/app.css")}/>
     <link rel="icon" type="image/x-icon" href={Routes.static_path(@conn,"/images/favicon.ico")}>
     <link rel="apple-touch-icon" href={Routes.static_path(@conn,"/images/logo.svg")}>
-    <link rel="manifest" href={Routes.static_path(@conn,"/manifest.json")}>
-    <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn,"/assets/app.js")}></script>
+    <link rel="manifest" href="/manifest.json">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn,"/assets/app.css")}/>
+    <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn,"/assets/app.js")}></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
