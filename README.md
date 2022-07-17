@@ -1,29 +1,31 @@
+[![CI/CD](https://github.com/shahdeys/website/actions/workflows/main.yml/badge.svg)](https://github.com/shahdeys/website/actions/workflows/main.yml)
 # website  
-Repository for Shah's portfolio website
+Bespoke portfolio software developed since 2014
 
 ## Software used  
 * Elixir 1.13.4
 * Phoenix LiveView 1.6
 * Docker
+* CSS
 * HTML
 * JavaScript
-* CSS
  
 ## Local dev
-### Docker specific commands 
+#### Docker specific commands 
 - `docker build --no-cache -f Dockerfile -t website:latest .`
   - this will build the local dev file with the latest tag 
 - `docker run -it -p 4000:4000 -e SECRET_KEY_BASE="<secret_val_here>" website`
   - this will run the docker image locally with the secret env var
-### Elixir specific commands
+#### Elixir specific commands
 - `mix phx.server`
   - this will run the elixir mix task to compile, then run the Phoenix LiveView web app on the configured endpoint
 
 ## Todo
-* Update styling sheets to use Bootstrap 5.2
 * Add more comprehensive unit tests
-* Add section for music production/hobbies
-* Add reddit social link
+* Add minimal footer
+  * Add section for music production/hobbies
+  * Add reddit social link
+* ~~Update styling sheets to use Bootstrap 5.2~~
 * ~~Add blogging system using Nimble Publisher~~
 * ~~Add CI/CD pipeline with GHAW + Fly.io~~
 * ~~Add trivial unit tests~~
