@@ -67,7 +67,7 @@ defmodule Website.MixProject do
       "assets.deploy": [
         "esbuild default --minify",
         "sass default --no-source-map --style=compressed",
-        "phx.digest"
+        "phx.digest priv/static/assets"
       ]
     ]
   end
