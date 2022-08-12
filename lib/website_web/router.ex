@@ -21,6 +21,8 @@ defmodule WebsiteWeb.Router do
     get "/resume", ResumeController, :index
     get "/projects", ProjectsController, :index
     get "/contact", ContactController, :index
+    get "/blog", BlogController, :index
+    get "/blog/:id", BlogController, :show
   end
 
   scope "/projects", WebsiteWeb do

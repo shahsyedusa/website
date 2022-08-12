@@ -52,7 +52,10 @@ COPY lib lib
 
 COPY assets assets
 
-# compile assets
+# build assets required to serve stylesheets
+RUN mix assets.build
+
+# compile assets and phoenix related apps
 RUN mix assets.deploy
 
 # Compile the release

@@ -1,0 +1,10 @@
+<h1 class="page-header">
+    <%= @post.title %>
+</h1>
+<p style="color: #4e5156;">
+    <%= @post.full_date %>
+</p>
+
+<%= raw @post.body %>
+<br/>
+<%= link "← Back to posts", to: Routes.blog_path(@conn, :index)%>

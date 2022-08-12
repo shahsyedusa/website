@@ -16,7 +16,8 @@ config :website, WebsiteWeb.Endpoint,
   secret_key_base: "BZFi5r93sNfQJ/jxzUhoUoeWfynA6IQnwzopYIGXzcSEymgOvzglpopDZj+ImsA0",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    sass: {DartSass, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support
@@ -50,7 +51,8 @@ config :website, WebsiteWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/website_web/(live|views)/.*(ex)$",
-      ~r"lib/website_web/templates/.*(eex)$"
+      ~r"lib/website_web/templates/.*(eex)$",
+      ~r"posts/*/.*(md)$"
     ]
   ]
 
