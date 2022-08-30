@@ -4,10 +4,11 @@ defmodule WebsiteWeb.BlogController do
   alias Website.Blog
 
   def index(conn, _params) do
-    render(conn, "index.html", posts: Blog.all_posts())
+    render(conn, "index.html", posts: Blog.all_posts(), title: "Blog")
   end
 
   def show(conn, %{"id" => id}) do
-    render(conn, "show.html", post: Blog.get_post_by_id!(id))
+    post = Blog.get_post_by_id!(id)
+    render(conn, "show.html", post: post, title: post.title)
   end
 end

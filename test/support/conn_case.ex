@@ -23,6 +23,7 @@ defmodule WebsiteWeb.ConnCase do
       import Plug.Conn
       import Phoenix.ConnTest
       import WebsiteWeb.ConnCase
+      import AssertHTML
 
       alias WebsiteWeb.Router.Helpers, as: Routes
 

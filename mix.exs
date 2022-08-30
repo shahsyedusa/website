@@ -7,10 +7,15 @@ defmodule Website.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:gettext] ++ Mix.compilers(),
+      compilers: Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [
+        summary: [
+          threshold: 80
+        ]
+      ]
     ]
   end
 
@@ -43,11 +48,12 @@ defmodule Website.MixProject do
       {:swoosh, "~> 1.3"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:nimble_publisher, "~> 0.1.2"},
-      {:dart_sass, "~> 0.5", runtime: Mix.env() == :dev}
+      {:dart_sass, "~> 0.5", runtime: Mix.env() == :dev},
+      {:assert_html, ">= 0.0.1", only: :test},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
 

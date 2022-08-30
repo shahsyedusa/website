@@ -22,7 +22,6 @@ defmodule WebsiteWeb do
       use Phoenix.Controller, namespace: WebsiteWeb
 
       import Plug.Conn
-      import WebsiteWeb.Gettext
       alias WebsiteWeb.Router.Helpers, as: Routes
     end
   end
@@ -80,7 +79,6 @@ defmodule WebsiteWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import WebsiteWeb.Gettext
     end
   end
 
@@ -96,7 +94,6 @@ defmodule WebsiteWeb do
       import Phoenix.View
 
       import WebsiteWeb.ErrorHelpers
-      import WebsiteWeb.Gettext
       alias WebsiteWeb.Router.Helpers, as: Routes
     end
   end

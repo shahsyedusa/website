@@ -1,4 +1,4 @@
-[![CI/CD](https://github.com/shahdeys/website/actions/workflows/main.yml/badge.svg)](https://github.com/shahdeys/website/actions/workflows/main.yml)
+[![Release & Deploy to Production](https://github.com/shahdeys/website/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/shahdeys/website/actions/workflows/deploy.yml)
 # website  
 Bespoke portfolio software developed since 2014
 
@@ -21,10 +21,16 @@ Bespoke portfolio software developed since 2014
   - this will run the elixir mix task to compile, then run the Phoenix LiveView web app on the configured endpoint
 
 ## Todo
-* Add more comprehensive unit tests
 * Add minimal footer
   * Add section for music production/hobbies
   * Add reddit social link
+* Add mailer functionality to submit form based email on Contact Page
+* Update/Fix items in static code analysis report with  `mix credo` 
+* Update to Elixir 1.14
+* Update to Erlang/OTP 25
+* Update to Phoenix 1.7
+* Redesign front-end using TailwindCSS vs. Bootstrap
+* ~~* Add more comprehensive unit tests~~
 * ~~Update styling sheets to use Bootstrap 5.2~~
 * ~~Add blogging system using Nimble Publisher~~
 * ~~Add CI/CD pipeline with GHAW + Fly.io~~

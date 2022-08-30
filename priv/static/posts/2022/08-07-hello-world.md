@@ -1,8 +1,9 @@
 %{
 title: "Hello World!",
 author: "Shah",
-tags: ~w(hello, elixir),
-description: ""
+tags: ["hello", "elixir"],
+description: "",
+published: true
 }
 ---
 Yes, how original. A blog post titled Hello World 😛
