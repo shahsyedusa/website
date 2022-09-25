@@ -3,8 +3,9 @@
 Bespoke portfolio software developed since 2014
 
 ## Software used  
-* Elixir 1.13.4
-* Phoenix LiveView 1.6
+* Elixir 1.14
+* Erlang OTP 25
+* Phoenix LiveView 0.18
 * Docker
 * CSS
 * HTML
@@ -26,10 +27,10 @@ Bespoke portfolio software developed since 2014
   * Add reddit social link
 * Add mailer functionality to submit form based email on Contact Page
 * Update/Fix items in static code analysis report with  `mix credo` 
-* Update to Elixir 1.14
-* Update to Erlang/OTP 25
-* Update to Phoenix 1.7
 * Redesign front-end using TailwindCSS vs. Bootstrap
+* ~~Update to Elixir 1.14~~
+* ~~Update to Erlang/OTP 25~~
+* ~~Update to Phoenix 1.7~~
 * ~~* Add more comprehensive unit tests~~
 * ~~Update styling sheets to use Bootstrap 5.2~~
 * ~~Add blogging system using Nimble Publisher~~
