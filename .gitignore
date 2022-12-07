@@ -39,3 +39,6 @@ npm-debug.log
 .c9/
 *.launch
 .settings/
+
+# Mac stuff
+.DS_Store
