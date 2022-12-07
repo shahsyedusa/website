@@ -22,6 +22,7 @@ Bespoke portfolio software developed since 2014
   - this will run the elixir mix task to compile, then run the Phoenix LiveView web app on the configured endpoint
 
 ## Todo
+* Public upload directory so I can hotlink the hottest memes to my frands
 * Add minimal footer
   * Add section for music production/hobbies
   * Add reddit social link
