@@ -3,15 +3,21 @@
 Bespoke portfolio software developed since 2014
 
 ## Software used  
-* Elixir 1.14
-* Erlang OTP 25
+* Elixir 1.16.1
+* Erlang OTP 26.2.2
 * Phoenix LiveView 0.18
 * Docker
-* CSS
-* HTML
-* JavaScript
+* Bootstrap 4
  
 ## Local dev
+#### ASDF troubleshooting/upgrading Elixir/Erlang
+- Make sure that:
+  - uninstall old versions
+  - install new versions
+  - reshim tools
+  - update tools in `/Users/<name>/.tool-versions`
+#### Run unit tests locally
+- `mix test`
 #### Docker specific commands 
 - `docker build --no-cache -f Dockerfile -t website:latest .`
   - this will build the local dev file with the latest tag 

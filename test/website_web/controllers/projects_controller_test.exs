@@ -9,7 +9,7 @@ defmodule WebsiteWeb.ProjectsControllerTest do
     |> assert_html("a[href='/blog']", count: 1)
     |> assert_html("a[href='/resume']", count: 1)
     |> assert_html("a[href='/projects/bachao']", count: 2)
-    |> assert_html("a[href='/projects/pythia']", count: 2)
+    |> assert_html("a[href='/projects/portfolio']", count: 1)
     |> assert_html("a[href='/contact']", count: 1)
     |> assert_html("a", min: 2)
     |> assert_html("a", max: 10)
@@ -23,21 +23,21 @@ defmodule WebsiteWeb.ProjectsControllerTest do
     |> assert_html("a[href='/blog']", count: 1)
     |> assert_html("a[href='/resume']", count: 1)
     |> assert_html("a[href='/projects/bachao']", count: 1)
-    |> assert_html("a[href='/projects/pythia']", count: 1)
+    |> assert_html("a[href='/projects/portfolio']", count: 1)
     |> assert_html("a[href='/contact']", count: 1)
     |> assert_html("a", min: 2)
     |> assert_html("a", max: 10)
   end
 
-  test "should get pythia", %{conn: conn} do
-    conn = get(conn, "/projects/pythia")
+  test "should get portfolio", %{conn: conn} do
+    conn = get(conn, "/projects/portfolio")
 
     html_response(conn, 200)
-    |> assert_html("title", "Shah Syed · Pythia")
+    |> assert_html("title", "Shah Syed · Portfolio")
     |> assert_html("a[href='/blog']", count: 1)
     |> assert_html("a[href='/resume']", count: 1)
     |> assert_html("a[href='/projects/bachao']", count: 1)
-    |> assert_html("a[href='/projects/pythia']", count: 1)
+    |> assert_html("a[href='/projects/portfolio']", count: 1)
     |> assert_html("a[href='/contact']", count: 1)
     |> assert_html("a", min: 2)
     |> assert_html("a", max: 10)
