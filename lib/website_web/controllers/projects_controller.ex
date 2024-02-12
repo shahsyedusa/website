@@ -9,7 +9,7 @@ defmodule WebsiteWeb.ProjectsController do
     render(conn, "bachao.html", title: "Bachao")
   end
 
-  def pythia(conn, _params) do
-    render(conn, "pythia.html", title: "Pythia")
+  def portfolio(conn, _params) do
+    render(conn, "portfolio.html", title: "Portfolio")
   end
 end
