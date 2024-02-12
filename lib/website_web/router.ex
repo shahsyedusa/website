@@ -29,7 +29,7 @@ defmodule WebsiteWeb.Router do
     pipe_through :browser
 
     get "/bachao", ProjectsController, :bachao
-    get "/pythia", ProjectsController, :pythia
+    get "/portfolio", ProjectsController, :portfolio
   end
 
   # Other scopes may use custom stacks.

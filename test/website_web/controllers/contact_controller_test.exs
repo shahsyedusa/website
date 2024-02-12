@@ -9,7 +9,7 @@ defmodule WebsiteWeb.ContactControllerTest do
     |> assert_html("a[href='/blog']", count: 1)
     |> assert_html("a[href='/resume']", count: 1)
     |> assert_html("a[href='/projects/bachao']", count: 1)
-    |> assert_html("a[href='/projects/pythia']", count: 1)
+    |> assert_html("a[href='/projects/portfolio']", count: 1)
     |> assert_html("a[href='/contact']", count: 1)
     |> assert_html("a", min: 1)
     |> assert_html("a", max: 8)
