@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        elixir: [ '1.16.1' ]
-        otp: [ '26.2.2' ]
+        elixir: [ '1.18.4' ]
+        otp: [ '27.3.4.2' ]
     steps:
       - name: Checkout Github repo
         uses: actions/checkout@v3
