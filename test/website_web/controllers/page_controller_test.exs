@@ -7,7 +7,7 @@ defmodule WebsiteWeb.PageControllerTest do
       |> get(Routes.page_path(conn, :index))
 
     html_response(conn, 200)
-    |> assert_html("title", "Shah Syed · Staff Software Engineer")
+    |> assert_html("title", "Shah Syed · Product Manager")
     |> assert_html("a[href='/blog']", count: 1)
     |> assert_html("a[href='/resume']", count: 1)
     |> assert_html("a[href='/projects/bachao']", count: 1)
