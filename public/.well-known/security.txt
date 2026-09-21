@@ -1,0 +1,3 @@
+Contact: mailto:shah@shahsyed.com
+Expires: 2027-09-20T00:00:00.000Z
+Canonical: https://shahsyed.com/.well-known/security.txt
